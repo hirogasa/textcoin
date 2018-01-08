@@ -32,7 +32,7 @@
 			<img src="images/byteball_chan2.png" width="100%">
 
 			<div>
-			<button class="button3">RECEIVE COIN</button>
+			<button class="button3" id="receive_coin">RECEIVE COIN</button>
 			</div>
 
 
@@ -57,6 +57,10 @@
 
 	</div>
 
-
+	<script>
+		document.getElementById("receive_coin").onclick = function(){
+			location.href = "byteball:" + window.location.hash.substr(1);
+		};
+	</script>
 </body>
 </html>
